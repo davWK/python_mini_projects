@@ -11,11 +11,14 @@ while True:
     url = 'https://github.com/'+username
 
     try:
-        r = requests.get(url) #send get request,  the status code should be  "200 OK"
+        r = requests.get(url) 
         r.raise_for_status()  #raise an HTTPError if the status code is not 200 OK
 
-        contenu = bs(r.content , 'html.parser')
-        image = contenu.find('img', {'alt' : 'Avatar'})['src']
+        #parse the content of the response and
+        #searches for the first occurrence of an HTML img tag 
+        #that has an alt attribute equal to "Avatar" within the contenu object 
+        contenu = bs(r.content , 'html.parser') 
+        image = contenu.find('img', {'alt' : 'Avatar'})['src'] 
         print(image)
 
         break # exit the loop if no exception occurs
