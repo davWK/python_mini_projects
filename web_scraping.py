@@ -3,9 +3,13 @@
 import requests
 from bs4 import BeautifulSoup as bs 
 
-# BeautifulSoup is a Python library used for web scraping purposes. 
-# It allows you to extract data from HTML and XML files by parsing the HTML/XML documents
-# and providing you with a navigable tree-like structure of the document.
+"""
+This script extracts the user's Github profile picture by scraping the user's Github page using BeautifulSoup,
+a Python library used for web scraping purposes. It prompts the user to input their Github username, and then
+searches for the first occurrence of an HTML img tag that has an alt attribute equal to "Avatar" within the 
+page's content. Once the image is found, the script prints its URL to the console.
+"""
+
 
 while True:
 

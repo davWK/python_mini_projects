@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+This script renames all files with a specified extension in a given directory with a   
+specified prefix and a number sequence. It is useful for bulk renaming files in an 
+automated fashion. 
+"""
+
 import os 
 
 def main():
