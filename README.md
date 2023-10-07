@@ -17,7 +17,7 @@
 - python
 
 ## Project Status
-Project is: _in progress_ 
+Project is: _no longer maintained_ 
 
 ## Acknowledgements
 Give credit here.
